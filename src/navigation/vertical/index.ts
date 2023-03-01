@@ -9,6 +9,7 @@ import CreditCardOutline from 'mdi-material-ui/CreditCardOutline'
 import AccountPlusOutline from 'mdi-material-ui/AccountPlusOutline'
 import AlertCircleOutline from 'mdi-material-ui/AlertCircleOutline'
 import GoogleCirclesExtended from 'mdi-material-ui/GoogleCirclesExtended'
+import AccountBoxMultipleOutline from 'mdi-material-ui/AccountBoxMultipleOutline'
 
 // ** Type import
 import { VerticalNavItemsType } from 'src/@core/layouts/types'
@@ -24,6 +25,11 @@ const navigation = (): VerticalNavItemsType => {
       title: 'Account Settings',
       icon: AccountCogOutline,
       path: '/account-settings'
+    },
+    {
+      title: 'Kenji Test',
+      icon: AccountBoxMultipleOutline,
+      path: '/kenji-demo'
     },
     {
       sectionTitle: 'Pages'
