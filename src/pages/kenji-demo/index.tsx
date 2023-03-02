@@ -29,13 +29,23 @@ const KenjiDemo = () => {
               Welcome back, Lucy! We've missed you. 👋
             </Typography>
           </Box>
-          <Box sx={{ display: 'flex', columnGap: 2 }}>
-            <IconButton size='small' aria-label='refresh' sx={{ color: 'primary.dark' }}>
-              <FilterVariant />
-            </IconButton>
-            <IconButton size='small' aria-label='filter' sx={{ color: 'primary.dark' }}>
-              <Refresh />
-            </IconButton>
+          <Box
+            sx={{
+              display: 'flex',
+              columnGap: 2,
+              flexDirection: { xs: 'column-reverse', md: 'row' },
+              alignItems: 'center'
+            }}
+          >
+            <Box>
+              <IconButton size='small' aria-label='refresh' sx={{ color: 'primary.dark' }}>
+                <FilterVariant />
+              </IconButton>
+              <IconButton size='small' aria-label='filter' sx={{ color: 'primary.dark' }}>
+                <Refresh />
+              </IconButton>
+            </Box>
+
             <Button variant='contained'>Today: April 29</Button>
           </Box>
         </Box>
