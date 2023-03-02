@@ -108,7 +108,7 @@ const LatestProjects = () => {
               <TableCell>{row.start}</TableCell>
               <TableCell>{row.end}</TableCell>
               <TableCell>
-                <Chip label={row.state} color={statusColorObj[row.state].color} />
+                <Chip label={row.state} sx={{ textTransform: 'capitalize' }} color={statusColorObj[row.state].color} />
               </TableCell>
               <TableCell>{row.assignee}</TableCell>
             </TableRow>
