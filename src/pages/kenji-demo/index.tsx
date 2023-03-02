@@ -2,6 +2,7 @@ import Grid from '@mui/material/Grid'
 import SimpleCard from 'src/views/kenji-demo/SimpleCard'
 import TotalRevenue from 'src/views/kenji-demo/TotalRevenue'
 import ResponsiveChart from 'src/views/kenji-demo/ResponsiveChart'
+import LatestProjects from 'src/views/kenji-demo/LatestProjects'
 
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 
@@ -26,6 +27,12 @@ const KenjiDemo = () => {
         </Grid>
         <Grid item xs={12} lg={4}>
           <ResponsiveChart />
+        </Grid>
+        <Grid item xs={12} lg={4}>
+          <ResponsiveChart />
+        </Grid>
+        <Grid item xs={12} lg={8}>
+          <LatestProjects />
         </Grid>
       </Grid>
     </ApexChartWrapper>
