@@ -19,7 +19,7 @@ const themeOptions = (settings: Settings): ThemeOptions => {
     palette: palette(mode, themeColor),
     typography: {
       fontFamily: [
-        'Inter',
+        'Overpass',
         'sans-serif',
         '-apple-system',
         'BlinkMacSystemFont',
@@ -37,7 +37,7 @@ const themeOptions = (settings: Settings): ThemeOptions => {
     ...spacing,
     breakpoints: breakpoints(),
     shape: {
-      borderRadius: 6
+      borderRadius: 0
     },
     mixins: {
       toolbar: {
