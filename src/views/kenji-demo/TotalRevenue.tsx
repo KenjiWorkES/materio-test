@@ -56,8 +56,8 @@ const TotalRevenue = () => {
       type: 'gradient',
       gradient: {
         shadeIntensity: 1,
-        opacityFrom: 0.2,
-        opacityTo: 0.3,
+        opacityFrom: 0.5,
+        opacityTo: 0.6,
         stops: [0, 90, 100]
       },
       colors: [theme.palette.primary.light, theme.palette.secondary.light]
@@ -73,12 +73,7 @@ const TotalRevenue = () => {
       }
     },
     dataLabels: { enabled: false },
-    series: [
-      {
-        data: [],
-        type: 'line'
-      }
-    ],
+
     colors: [
       theme.palette.background.default,
       theme.palette.background.default,
@@ -121,9 +116,9 @@ const TotalRevenue = () => {
   }
 
   return (
-    <Card>
+    <Card sx={{ height: '100%' }}>
       <CardHeader
-        title='Total revenue'
+        title='Total Revenue'
         titleTypographyProps={{
           sx: { lineHeight: '2rem !important', letterSpacing: '0.15px !important' }
         }}

@@ -3,6 +3,7 @@ import SimpleCard from 'src/views/kenji-demo/SimpleCard'
 import TotalRevenue from 'src/views/kenji-demo/TotalRevenue'
 import ResponsiveChart from 'src/views/kenji-demo/ResponsiveChart'
 import LatestProjects from 'src/views/kenji-demo/LatestProjects'
+import WeeklySales from 'src/views/kenji-demo/WeeklySales'
 
 import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
 
@@ -22,11 +23,11 @@ const KenjiDemo = () => {
         <Grid item xs={12} md={6} lg={3}>
           <SimpleCard title='Pending Orders' trendValue='-9%' number={45} trend='negative' />
         </Grid>
-        <Grid item xs={12} lg={8}>
+        <Grid item xs={12} lg={8} alignItems='stretch'>
           <TotalRevenue />
         </Grid>
         <Grid item xs={12} lg={4}>
-          <ResponsiveChart />
+          <WeeklySales />
         </Grid>
         <Grid item xs={12} lg={4}>
           <ResponsiveChart />
